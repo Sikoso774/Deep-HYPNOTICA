@@ -34,8 +34,8 @@ TEXTE_DEVELOPPEUR = "Sikoso774"
 # Tu peux ajuster ces valeurs pour chaque image.
 # Exemple si tu veux une image plus petite, sauf la première (logo Pygame) qui serait pleine taille :
 IMAGE_SIZES_FACTORS = [
-    (0.8, 0.8),  # Pour pygame_logo.png (si tu veux qu'il soit un peu plus petit que l'écran)
+    (0.5, 0.5),  # Pour Zoléni_Cyberpunk.jpg (si tu veux qu'il soit un peu plus petit que l'écran)
     (0.5, 0.5),  # Pour PP_Sikoso_77.jpg (plus petit)
-    (0.6, 0.6)   # Pour Zoléni_Cyberpunk.jpg (un peu plus grand que le précédent)
+    (0.8, 0.8)   # Pour pygame_logo.png (un peu plus grand que le précédent)
 ]
 # Assure-toi que la longueur de cette liste correspond au nombre d'images dans ton appel à Démarrage().run()

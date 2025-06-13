@@ -51,7 +51,7 @@ def draw_demarrage_frame(screen, image, current_phase_time, total_duration_per_p
     police_txt_1 = get_demarrage_font(48) # Taille plus grande pour le logo
     txt_1_surface = police_txt_1.render(TEXTE_LOGO_JEU, True, BLANC)
     txt_1_surface.set_alpha(alpha_txt_1)
-    txt_1_rect = txt_1_surface.get_rect(center=(LARGEUR_ECRAN_DEMARRAGE // 2, HAUTEUR_ECRAN_DEMARRAGE // 4))
+    txt_1_rect = txt_1_surface.get_rect(center=(LARGEUR_ECRAN_DEMARRAGE // 2, HAUTEUR_ECRAN_DEMARRAGE // 6))
     screen.blit(txt_1_surface, txt_1_rect)
 
     # Texte 2 (Sikoso774 / Projet Hypnotica) - Apparaît après 2/3 de la durée

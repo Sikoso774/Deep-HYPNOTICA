@@ -108,9 +108,9 @@ if __name__ == "__main__":
 
         # Exemple d'images à tester
         test_image_paths = [
-            get_resource_path("assets/images/pygame_logo.png"),
+            get_resource_path("assets/images/Zoléni_Cyberpunk.jpg"),
             get_resource_path("assets/images/PP_Sikoso_77.jpg"),
-            get_resource_path("assets/images/Zoléni_Cyberpunk.jpg")
+            get_resource_path("assets/images/pygame_logo.png")
         ]
 
         demarrage_test = Démarrage()
