@@ -7,18 +7,16 @@ import sys
 
 # -------------- Mes programmes (mise à jour des chemins) --------------------------------
 
-# Assure-toi que ces modules existent à ces chemins
 from scripts.chargement_components.chargement import Chargement
 from scripts.demarrage_components.demmarage_logic import Démarrage
 from scripts.ecran_titre_components.ecran_titre_logic import EcranTitre
-# NOUVELLE IMPORTATION POUR LE JEU :
-from scripts.game.game import Game  # Le chemin est maintenant scripts/game/game.py
+from scripts.game.game import Game
 from scripts.credits_components.credits_logic import CreditsScreen
 from scripts.game_over_components.game_over_logic import GameOverScreen
 from scripts.instructions_components.instructions_logic import InstructionsScreen
 from scripts.paths import get_resource_path
 
-# -------------- Programme principal ------------------------------------------------------
+# --------------------------- Programme principal ------------------------------------------------------
 
 if __name__ == '__main__':
     # Initialisation de Pygame et du mixer, une seule fois au début du programme.
@@ -28,13 +26,6 @@ if __name__ == '__main__':
         pygame.init()
     if not pygame.mixer.get_init():
         pygame.mixer.init()
-
-    # Création de l'écran principal.
-    # Note: comme mentionné, plusieurs de tes classes existantes (Démarrage, Chargement, EcranTitre etc.)
-    # créent leur propre écran. Pour l'instant, nous laissons cette redondance pour assurer le fonctionnement.
-    # Une meilleure approche serait de passer 'screen' en argument à toutes ces classes.
-    #screen = pygame.display.set_mode((LARGEUR_ECRAN_JEU, HAUTEUR_ECRAN_JEU))
-    #pygame.display.set_caption(TITRE_FENETRE_JEU)
 
     # Exécution de l'écran de démarrage
     game_demarrage = Démarrage()
@@ -49,7 +40,7 @@ if __name__ == '__main__':
     # car Chargement.py charge ses propres images globalement.
     game_chargement.loading()
 
-    # ------------- Boucle principale du jeu --------------------------------------------------
+# --------------------------- Boucle principale du jeu ---------------------------------------------
     while True:
         # Écran titre
         ecran_titre_instance = EcranTitre()

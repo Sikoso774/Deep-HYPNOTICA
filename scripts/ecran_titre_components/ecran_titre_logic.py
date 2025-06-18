@@ -4,6 +4,7 @@ import pygame
 import os
 import sys
 
+from ecran_titre_components.constants import ORANGE
 from scripts.paths import get_resource_path
 from scripts.ecran_titre_components.constants import (
     BLANC, LARGEUR_ECRAN, HAUTEUR_ECRAN, TITRE_FENETRE, NOIR, ROUGE, VERT,  # Ajout de GRIS
@@ -50,9 +51,9 @@ class EcranTitre:
         # Configuration des boutons avec la nouvelle couleur par défaut ou spécifique
         self.boutons = [
             Bouton(self.largeur // 2 - 100, self.hauteur // 2, 200, 50, "Démarrer", "démarrer", self._bouton_police, color=VERT), # Utilise la couleur VERTE pour "Démarrer"
-            Bouton(self.largeur // 2 - 100, self.hauteur // 2 + 70, 200, 50, "Crédits", "crédits", self._bouton_police, color=NOIR), # Exemple : Bouton "Crédits" en BLEU
-            Bouton(self.largeur // 2 - 100, self.hauteur // 2 + 140, 200, 50, "Instructions", "instructions", self._bouton_police, color=NOIR), # Exemple : Bouton "Instructions" en ROUGE
-            Bouton(self.largeur // 2 - 100, self.hauteur // 2 + 210, 200, 50, "Quitter", "quitter", self._bouton_police, color=ROUGE) # Exemple : Bouton "Quitter" en GRIS
+            Bouton(self.largeur // 2 - 100, self.hauteur // 2 + 70, 200, 50, "Crédits", "crédits", self._bouton_police, color=ORANGE), # Exemple : Bouton "Crédits" en BLEU
+            Bouton(self.largeur // 2 - 100, self.hauteur // 2 + 140, 200, 50, "Instructions", "instructions", self._bouton_police, color=ROUGE), # Exemple : Bouton "Instructions" en ROUGE
+            Bouton(self.largeur // 2 - 100, self.hauteur // 2 + 210, 200, 50, "Quitter", "quitter", self._bouton_police, color=NOIR) # Exemple : Bouton "Quitter" en GRIS
         ]
 
         self.animation_frame = 0
