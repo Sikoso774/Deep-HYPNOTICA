@@ -1,8 +1,8 @@
-# <u>HYPNOTICA PROJECT</u>
+# HYPNOTICA PROJECT
 
-# Zoléni Kokolo Zassi
+ Project by Zoléni Kokolo Zassi
 
-## Welcome to my first project in video game. 
+## Welcome to my first project in video game
 
-### I always wanted to  create my first video game. My prototype was created with Pygame.
-### This is the version 4.0.0 with a better development logiciel 
+I always wanted to  create my first video game. My prototype was created with Pygame.
+This is the version 4.0.0 with a better development logiciel.
