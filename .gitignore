@@ -1,5 +1,13 @@
 __pycache__
+<<<<<<< HEAD
 .idea
 *pyc
 *xlsx
 *docx
+=======
+*.pyc
+backup
+.idea
+*.docx
+*.xlsx
+>>>>>>> dev
