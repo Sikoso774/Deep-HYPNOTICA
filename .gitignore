@@ -1,6 +1,7 @@
 __pycache__
 *.pyc
-backup
+/backup
 .idea
 *.docx
 *.xlsx
+*.zip
